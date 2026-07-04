@@ -131,7 +131,7 @@ export default async function InsightArticlePage({ params }: Props) {
 
       <CTASection
         title="Apply this thinking to your organization"
-        description="Our advisors help executives translate strategy into architecture, AI, and transformation roadmaps—before costly commitments are made."
+        description="Our advisors help executives translate strategy into architecture, AI, and transformation roadmaps-before costly commitments are made."
       />
     </>
   );

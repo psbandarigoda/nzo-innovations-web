@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Products & Innovations",
   description:
-    "nZO Innovations builds technology products alongside consulting—enterprise platforms, AI analytics, and integration solutions.",
+    "nZO Innovations builds technology products alongside consulting-enterprise platforms, AI analytics, and integration solutions.",
   path: "/products",
   keywords: ["Platform Strategy"],
 });
@@ -20,7 +20,7 @@ export default function ProductsPage() {
       <PageHero
         eyebrow="Innovations"
         title="Technology products built on consulting excellence"
-        description="Beyond advisory, we develop our own innovations—platforms shaped by real enterprise challenges and strategic thinking."
+        description="Beyond advisory, we develop our own innovations-platforms shaped by real enterprise challenges and strategic thinking."
       />
 
       <section className="section-padding bg-background">
@@ -29,7 +29,7 @@ export default function ProductsPage() {
             <SectionHeader
               eyebrow="Consulting First"
               title="Advisory expertise powers our products"
-              description="Our products emerge from the patterns we see across engagements—designed for the problems executives actually face."
+              description="Our products emerge from the patterns we see across engagements-designed for the problems executives actually face."
               align="left"
             />
           </FadeIn>
@@ -38,7 +38,7 @@ export default function ProductsPage() {
             <div className="rounded-2xl border border-border bg-surface p-8 md:p-10 lg:p-12">
               <p className="text-base leading-relaxed text-muted-foreground md:text-lg">
                 nZO Innovations is both a consulting partner and a product-driven company.
-                Our advisory work informs every product we build—ensuring they solve real
+                Our advisory work informs every product we build-ensuring they solve real
                 business problems with enterprise-grade architecture and security.
               </p>
             </div>

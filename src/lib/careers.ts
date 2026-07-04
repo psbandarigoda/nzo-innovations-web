@@ -18,10 +18,10 @@ export const CAREER_OPENINGS: CareerOpening[] = [
     location: "Colombo, Sri Lanka · Hybrid",
     type: "Full-time",
     summary:
-      "Own architecture and delivery for scalable platforms—partnering with consultants and product teams to turn strategy into production-ready systems.",
+      "Own architecture and delivery for scalable platforms-partnering with consultants and product teams to turn strategy into production-ready systems.",
     responsibilities: [
       "Design and build cloud-native services, APIs, and data layers aligned with enterprise architecture standards",
-      "Lead technical decisions across stack, patterns, and trade-offs—balancing speed, security, and long-term maintainability",
+      "Lead technical decisions across stack, patterns, and trade-offs-balancing speed, security, and long-term maintainability",
       "Mentor engineers through code review, pairing, and clear documentation",
       "Collaborate with advisors and stakeholders to translate business requirements into technical roadmaps",
       "Establish engineering practices: CI/CD, observability, testing, and release discipline",
@@ -45,7 +45,7 @@ export const CAREER_OPENINGS: CareerOpening[] = [
     location: "Colombo, Sri Lanka · Hybrid",
     type: "Full-time",
     summary:
-      "Build and ship reliable product features across our platform stack—focused on clean code, user impact, and continuous learning.",
+      "Build and ship reliable product features across our platform stack-focused on clean code, user impact, and continuous learning.",
     responsibilities: [
       "Develop frontend and backend features using modern frameworks and component-driven UI",
       "Write tested, maintainable code and participate in design and sprint ceremonies",
@@ -57,7 +57,7 @@ export const CAREER_OPENINGS: CareerOpening[] = [
       "2+ years professional software development experience",
       "Proficiency in at least one modern stack (e.g. React/Next.js, Node, or equivalent)",
       "Understanding of REST APIs, Git workflows, and basic cloud deployment concepts",
-      "Growth mindset—open to feedback and eager to deepen architecture skills",
+      "Growth mindset-open to feedback and eager to deepen architecture skills",
       "Degree in CS/Engineering or equivalent practical experience",
     ],
     niceToHave: [
@@ -99,17 +99,17 @@ export const CAREER_OPENINGS: CareerOpening[] = [
     location: "Colombo, Sri Lanka · Hybrid",
     type: "Full-time",
     summary:
-      "Shape how nZO shows up digitally—building authority, demand, and trust with executives through strategic content and social presence.",
+      "Shape how nZO shows up digitally-building authority, demand, and trust with executives through strategic content and social presence.",
     responsibilities: [
       "Own social strategy across LinkedIn and relevant B2B channels aligned with consulting positioning",
       "Plan and execute content calendars: thought leadership, case narratives, events, and employer brand",
       "Collaborate with leadership and advisors to translate expertise into compelling stories",
-      "Track engagement, pipeline influence, and brand metrics—iterate based on data",
+      "Track engagement, pipeline influence, and brand metrics-iterate based on data",
       "Maintain premium visual and tonal standards consistent with an executive advisory brand",
     ],
     requirements: [
       "3+ years in B2B marketing, brand, or social strategy (tech or professional services preferred)",
-      "Portfolio demonstrating strategic content—not just posting, but narrative and audience building",
+      "Portfolio demonstrating strategic content-not just posting, but narrative and audience building",
       "Strong writing and editing skills for executive and LinkedIn-native formats",
       "Comfort with analytics tools and basic design collaboration (Figma, Canva, or agency workflows)",
       "Understanding of technology consulting or enterprise buyer journeys",

@@ -11,7 +11,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Careers",
   description:
-    "Join nZO Innovations—open roles in platform engineering, cloud reliability, and brand growth. Build products and advisory impact in Colombo and remote.",
+    "Join nZO Innovations-open roles in platform engineering, cloud reliability, and brand growth. Build products and advisory impact in Colombo and remote.",
   path: "/careers",
 });
 
@@ -20,7 +20,7 @@ const cultureCards = [
     icon: Users,
     title: "Build With Purpose",
     description:
-      "Work across consulting engagements and internal products—where engineering meets business strategy.",
+      "Work across consulting engagements and internal products-where engineering meets business strategy.",
   },
   {
     icon: Rocket,
@@ -32,7 +32,7 @@ const cultureCards = [
     icon: Briefcase,
     title: "Growth & Ownership",
     description:
-      "Clear scope, mentorship, and room to lead—whether you ship code, infrastructure, or brand.",
+      "Clear scope, mentorship, and room to lead-whether you ship code, infrastructure, or brand.",
   },
 ] as const;
 
@@ -90,7 +90,7 @@ export default function CareersPage() {
             <h2 className="text-3xl font-semibold tracking-tight">Open roles</h2>
             <p className="mt-4 max-w-2xl text-muted-foreground">
               Current opportunities at nZO Innovations. Don&apos;t see a perfect match?
-              Reach out—we&apos;re always interested in exceptional people.
+              Reach out-we&apos;re always interested in exceptional people.
             </p>
           </FadeIn>
 
@@ -144,7 +144,7 @@ export default function CareersPage() {
 
       <CTASection
         title="Ready to join nZO?"
-        description="Send your CV, portfolio, or LinkedIn—and tell us which role excites you and why."
+        description="Send your CV, portfolio, or LinkedIn-and tell us which role excites you and why."
         primaryLabel="Apply via Contact"
       />
     </>

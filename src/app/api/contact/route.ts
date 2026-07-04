@@ -81,7 +81,7 @@ export async function POST(request: Request) {
     const resend = new Resend(apiKey);
 
     const subject = data.jobApplication
-      ? `Job application: ${data.jobApplication} — ${data.name}`
+      ? `Job application: ${data.jobApplication} - ${data.name}`
       : `Consultation request from ${data.name} (${data.company})`;
 
     const { error } = await resend.emails.send({
