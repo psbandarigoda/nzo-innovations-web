@@ -12,7 +12,7 @@ export const SITE = {
   email: "hello@nzoinnovations.com",
   phone: "+94 77 363 8063",
   address: "46 Lighthouse St, Galle 80000",
-  linkedin: "https://linkedin.com/company/nzo-innovations",
+  linkedin: "https://www.linkedin.com/company/114184182/",
   facebook: "https://facebook.com/nzoinnovations",
 } as const;
 
@@ -116,10 +116,10 @@ export const INSIGHTS = [
 ] as const;
 
 export const STATS = [
-  { label: "Years of Experience", value: 10, suffix: "+" },
+  { label: "Years of Experience", value: 5, suffix: "+" },
   { label: "Industries Served", value: 9, suffix: "" },
-  { label: "Enterprise Clients", value: 50, suffix: "+" },
-  { label: "Strategic Engagements", value: 100, suffix: "+" },
+  { label: "Enterprise Clients", value: 5, suffix: "+" },
+  { label: "Strategic Engagements", value: 10, suffix: "+" },
 ] as const;
 
 export const SEO_KEYWORDS = [
