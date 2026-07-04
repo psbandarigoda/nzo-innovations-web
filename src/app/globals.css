@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0b1426;
+  --card: #ffffff;
+  --card-foreground: #0b1426;
+  --muted: #f4f6f9;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+  --accent: #2563eb;
+  --accent-foreground: #ffffff;
+  --navy: #0b1426;
+  --navy-light: #111d35;
+  --surface: #fafbfc;
+  --ring: #2563eb;
+}
+
+.dark {
+  --background: #0b1426;
+  --foreground: #f8fafc;
+  --card: #111d35;
+  --card-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --border: #1e293b;
+  --accent: #3b82f6;
+  --accent-foreground: #ffffff;
+  --navy: #0b1426;
+  --navy-light: #111d35;
+  --surface: #0f1729;
+  --ring: #3b82f6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-surface: var(--surface);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* { border-color: var(--border); }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.glass {
+  background: color-mix(in srgb, var(--background) 80%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.section-padding { @apply px-6 py-20 md:px-8 md:py-28 lg:px-12; }
+.container-nzo { @apply mx-auto w-full max-w-7xl; }
