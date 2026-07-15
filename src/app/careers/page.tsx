@@ -11,7 +11,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Careers",
   description:
-    "Join nZO Innovations-open roles in platform engineering, cloud reliability, and brand growth. Build products and advisory impact in Colombo and remote.",
+    "Join nZO Innovations-open roles in software engineering, platform engineering, brand growth, and internships. Build products and advisory impact in Sri Lanka.",
   path: "/careers",
 });
 
@@ -61,7 +61,7 @@ export default function CareersPage() {
       <PageHero
         eyebrow="Careers"
         title="Build platforms. Shape brands. Grow with nZO."
-        description="We're hiring engineers and strategists who want to work at the intersection of consulting excellence and product innovation."
+        description="We're hiring software engineers, platform engineers, strategists, and interns who want to work at the intersection of consulting excellence and product innovation."
       />
 
       <section className="section-padding bg-background">
