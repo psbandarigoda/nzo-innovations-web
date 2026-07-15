@@ -11,7 +11,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Careers",
   description:
-    "Join nZO Innovations—open roles in software engineering, platform engineering, brand growth, and internships. Build products and advisory impact in Sri Lanka.",
+    "Join nZO Innovations-open roles in software engineering, platform engineering, brand growth, and internships. Build products and advisory impact in Sri Lanka.",
   path: "/careers",
 });
 
