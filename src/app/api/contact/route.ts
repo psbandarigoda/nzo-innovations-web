@@ -18,16 +18,12 @@ function buildEmailHtml(data: {
   company: string;
   role?: string;
   message: string;
-  jobApplication?: string;
 }) {
   const rows = [
     ["Name", data.name],
     ["Email", data.email],
     ["Company", data.company],
     ...(data.role ? [["Role", data.role] as const] : []),
-    ...(data.jobApplication
-      ? [["Applying for", data.jobApplication] as const]
-      : []),
     ["Message", data.message],
   ];
 
@@ -80,15 +76,11 @@ export async function POST(request: Request) {
     const data = parsed.data;
     const resend = new Resend(apiKey);
 
-    const subject = data.jobApplication
-      ? `Job application: ${data.jobApplication} - ${data.name}`
-      : `Consultation request from ${data.name} (${data.company})`;
-
     const { error } = await resend.emails.send({
       from: fromEmail,
       to: [toEmail],
       replyTo: data.email,
-      subject,
+      subject: `Consultation request from ${data.name} (${data.company})`,
       html: buildEmailHtml(data),
     });
 

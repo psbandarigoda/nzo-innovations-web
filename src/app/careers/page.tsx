@@ -115,7 +115,7 @@ export default function CareersPage() {
                         </p>
                       </div>
                       <Button asChild variant="secondary" className="shrink-0">
-                        <Link href={`/contact?role=${job.id}`}>Apply now</Link>
+                        <Link href={`/careers/apply?role=${job.id}`}>Apply now</Link>
                       </Button>
                     </div>
 
@@ -144,8 +144,11 @@ export default function CareersPage() {
 
       <CTASection
         title="Ready to join nZO?"
-        description="Send your CV, portfolio, or LinkedIn-and tell us which role excites you and why."
-        primaryLabel="Apply via Contact"
+        description="Submit a formal job application with your CV—separate from business consultation requests."
+        primaryLabel="Submit Application"
+        primaryHref="/careers/apply"
+        secondaryLabel="View open roles"
+        secondaryHref="/careers"
       />
     </>
   );
