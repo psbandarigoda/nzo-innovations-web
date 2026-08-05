@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { Mail, MapPin, Phone, Share2, Globe } from "lucide-react";
 import { PageHero } from "@/components/sections/page-hero";
 import { ContactForm } from "@/components/forms/contact-form";
@@ -105,9 +104,7 @@ export default function ContactPage() {
                   Tell us about your business and technology goals. We&apos;ll respond within one business day.
                 </p>
                 <div className="mt-8">
-                  <Suspense fallback={<div className="h-96 animate-pulse rounded-xl bg-muted/40" />}>
-                    <ContactForm />
-                  </Suspense>
+                  <ContactForm />
                 </div>
               </div>
             </FadeIn>

@@ -1,7 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "@/components/ui/button";
@@ -9,16 +8,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { contactSchema, type ContactFormData } from "@/lib/contact-schema";
-import { CAREER_OPENINGS } from "@/lib/careers";
 
 export function ContactForm() {
-  const searchParams = useSearchParams();
-  const jobApplication = useMemo(() => {
-    const jobId = searchParams.get("role");
-    if (!jobId) return undefined;
-    return CAREER_OPENINGS.find((job) => job.id === jobId)?.title;
-  }, [searchParams]);
-
   const [submitted, setSubmitted] = useState(false);
 
   const {
@@ -35,10 +26,7 @@ export function ContactForm() {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...data,
-          jobApplication: data.jobApplication || jobApplication,
-        }),
+        body: JSON.stringify(data),
       });
 
       const result = (await response.json()) as { error?: string };
@@ -55,8 +43,7 @@ export function ContactForm() {
       setSubmitted(true);
     } catch {
       setError("root", {
-        message:
-          "Network error. Please check your connection and try again.",
+        message: "Network error. Please check your connection and try again.",
       });
     }
   };
@@ -74,18 +61,7 @@ export function ContactForm() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="space-y-6"
-      noValidate
-    >
-      {jobApplication && (
-        <div className="rounded-xl border border-accent/20 bg-accent/5 px-4 py-3 text-sm">
-          Applying for:{" "}
-          <span className="font-medium text-foreground">{jobApplication}</span>
-        </div>
-      )}
-
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-6" noValidate>
       <div className="grid gap-6 sm:grid-cols-2">
         <div className="space-y-2">
           <Label htmlFor="name">Full Name</Label>
