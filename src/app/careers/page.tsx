@@ -144,7 +144,7 @@ export default function CareersPage() {
 
       <CTASection
         title="Ready to join nZO?"
-        description="Submit a formal job application with your CV—separate from business consultation requests."
+        description="Submit a formal job application with your CV-separate from business consultation requests."
         primaryLabel="Submit Application"
         primaryHref="/careers/apply"
         secondaryLabel="View open roles"
