@@ -10,7 +10,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Apply",
   description:
-    "Submit your job application and CV to join nZO Innovations—software engineering, platform engineering, brand, and internship roles.",
+    "Submit your job application and CV to join nZO Innovations-software engineering, platform engineering, brand, and internship roles.",
   path: "/careers/apply",
 });
 
@@ -20,7 +20,7 @@ export default function CareerApplyPage() {
       <PageHero
         eyebrow="Careers"
         title="Submit your application"
-        description="Apply for an open role at nZO Innovations. Upload your CV and tell us why you're a fit—this is a job application, not a business consultation."
+        description="Apply for an open role at nZO Innovations. Upload your CV and tell us why you're a fit-this is a job application, not a business consultation."
       />
 
       <section className="section-padding bg-background">

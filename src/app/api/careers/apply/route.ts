@@ -126,7 +126,7 @@ export async function POST(request: Request) {
       from: fromEmail,
       to: [toEmail],
       replyTo: fields.data.email,
-      subject: `Job application: ${position.title} — ${fields.data.name}`,
+      subject: `Job application: ${position.title} - ${fields.data.name}`,
       html: buildEmailHtml({
         name: fields.data.name,
         email: fields.data.email,
