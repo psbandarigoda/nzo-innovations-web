@@ -86,11 +86,23 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error("Resend send error:", error);
-      const detail =
-        process.env.NODE_ENV === "development" && error.message
-          ? error.message
-          : "We couldn't send your message. Please try again or email us directly.";
-      return NextResponse.json({ error: detail }, { status: 500 });
+      const resendMessage =
+        typeof error === "object" && error && "message" in error
+          ? String((error as { message: string }).message)
+          : "";
+      const isTestDomainLimit =
+        resendMessage.toLowerCase().includes("only send testing emails") ||
+        resendMessage.toLowerCase().includes("verify a domain");
+
+      return NextResponse.json(
+        {
+          error: isTestDomainLimit
+            ? "Resend test sender can only deliver to your Resend account email. Set CONTACT_TO_EMAIL to that address, or verify your domain and change RESEND_FROM_EMAIL."
+            : resendMessage ||
+              "We couldn't send your message. Please try again or email us directly.",
+        },
+        { status: 500 }
+      );
     }
 
     return NextResponse.json({ success: true });

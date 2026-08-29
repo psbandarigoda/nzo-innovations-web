@@ -20,7 +20,7 @@ const FOOTER_COMPANY_LINKS = [
 const FOOTER_EXPERTISE_LINKS = [
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
-  { label: "Products", href: "/products" },
+  { label: "Products & Ventures", href: "/products" },
   { label: "Insights", href: "/insights" },
 ] as const;
 
@@ -263,7 +263,7 @@ export function SiteFooter() {
             © {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </p>
           <p className="text-xs text-white/50">
-            Technology Consulting & Solution Advisory
+            Technology Consulting & Venture Building
           </p>
         </div>
       </div>

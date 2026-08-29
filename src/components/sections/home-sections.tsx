@@ -114,6 +114,7 @@ const areList = [
   "Solution Architect",
   "Enterprise Consultant",
   "Digital Transformation Partner",
+  "Product & Venture Builder",
 ] as const;
 
 export function PositioningSection() {

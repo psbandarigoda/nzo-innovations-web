@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "About Us",
   description:
-    "Learn about nZO Innovations-a technology consulting and solution advisory company helping businesses drive digital transformation.",
+    "nZO Innovations is a technology consulting and venture-building company-helping organizations transform digitally while incubating products that can become independent companies.",
   path: "/about",
 });
 
@@ -20,8 +20,8 @@ const expertiseAreas = [
   "Solution Design",
   "AI Adoption",
   "Platform Strategy",
-  "Cloud Architecture",
-  "Business Process Optimization",
+  "Product Incubation",
+  "Venture Building",
 ] as const;
 
 export default function AboutPage() {
@@ -29,8 +29,8 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About nZO Innovations"
-        title="Business strategy meets technology excellence"
-        description="We are a technology consulting and solution advisory company. We help startups, SMEs, and enterprises identify the right IT strategies and transform ideas into scalable digital platforms."
+        title="Advisory excellence. Venture ambition."
+        description="We are a technology consulting and venture-building company. We help startups, SMEs, and enterprises make the right technology decisions-and we incubate digital products designed to become sustainable, independent businesses."
       />
 
       <section className="section-padding bg-background">
@@ -50,19 +50,20 @@ export default function AboutPage() {
             <FadeIn delay={0.1}>
               <div>
                 <h2 className="text-3xl font-semibold tracking-tight">
-                  We understand business before technology
+                  Business outcomes first. Companies built to last.
                 </h2>
                 <p className="mt-6 leading-relaxed text-muted-foreground">
-                  nZO Innovations bridges business strategy and software execution. Our
-                  advisors work alongside CEOs, founders, and enterprise leaders to make
+                  nZO Innovations bridges business strategy and technology execution. Our
+                  advisors work with CEOs, founders, and enterprise leaders to make
                   technology decisions that drive measurable growth-not just deliver
                   projects.
                 </p>
                 <p className="mt-4 leading-relaxed text-muted-foreground">
-                  From concept to implementation, we guide businesses toward scalable,
-                  secure, and production-ready solutions. Alongside consulting services,
-                  we build our own technology products-making us both a trusted advisory
-                  partner and a product-driven innovator.
+                  Alongside consulting, we discover, validate, and incubate digital
+                  products. When ventures mature-as with Entertain Passport (Pvt) Ltd-they
+                  can become independent companies with dedicated teams, while nZO retains
+                  ownership flexibility and strategic partnership. Our goal is to build
+                  systems, teams, and products that can create value beyond any single founder.
                 </p>
               </div>
             </FadeIn>
