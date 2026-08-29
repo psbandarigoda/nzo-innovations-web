@@ -17,7 +17,7 @@ export function createMetadata({
   const url = `${SITE.url}${path}`;
   const fullTitle =
     path === "" || path === "/"
-      ? `${SITE.shortName} | Technology Consulting & Solution Advisory`
+      ? `${SITE.shortName} | Technology Consulting & Venture Building`
       : `${title} | ${SITE.shortName}`;
 
   return {
@@ -71,6 +71,8 @@ export function organizationSchema() {
       "Enterprise Architecture",
       "Solution Architecture",
       "AI Consulting",
+      "Product Development",
+      "Venture Building",
     ],
     sameAs: [SITE.linkedin, SITE.facebook],
   };

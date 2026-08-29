@@ -11,28 +11,28 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Careers",
   description:
-    "Join nZO Innovations-open roles in software engineering, platform engineering, brand growth, and internships. Build products and advisory impact in Sri Lanka.",
+    "Join nZO Innovations-build products, shape ventures, and grow with the companies you help create. Roles in engineering, platform, brand, and internships.",
   path: "/careers",
 });
 
 const cultureCards = [
   {
     icon: Users,
-    title: "Build With Purpose",
+    title: "Build Products. Build Companies.",
     description:
-      "Work across consulting engagements and internal products-where engineering meets business strategy.",
+      "Work across consulting engagements and incubating ventures-where engineering meets business strategy and real market outcomes.",
   },
   {
     icon: Rocket,
     title: "Modern Stack & Practices",
     description:
-      "Cloud-native tooling, async collaboration, and engineering standards shaped by real enterprise delivery.",
+      "Cloud-native tooling, async collaboration, and engineering standards shaped by real enterprise and product delivery.",
   },
   {
     icon: Briefcase,
-    title: "Growth & Ownership",
+    title: "Grow With What You Help Create",
     description:
-      "Clear scope, mentorship, and room to lead-whether you ship code, infrastructure, or brand.",
+      "High-potential contributors can grow into product leadership as ventures mature. Specific incentives are discussed case by case-never as public promises.",
   },
 ] as const;
 
@@ -60,8 +60,8 @@ export default function CareersPage() {
     <>
       <PageHero
         eyebrow="Careers"
-        title="Build platforms. Shape brands. Grow with nZO."
-        description="We're hiring software engineers, platform engineers, strategists, and interns who want to work at the intersection of consulting excellence and product innovation."
+        title="Build products. Build companies. Grow with nZO."
+        description="We're hiring engineers, platform builders, strategists, and interns who want to work at the intersection of consulting excellence and venture creation."
       />
 
       <section className="section-padding bg-background">

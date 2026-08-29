@@ -33,16 +33,16 @@ export function HeroSection() {
           className="max-w-4xl"
         >
           <p className="mb-6 text-sm font-medium uppercase tracking-widest text-white/60">
-            {SITE.shortName} - Technology Consulting & Advisory
+            {SITE.shortName} - Technology Consulting & Venture Building
           </p>
           <h1 className="text-4xl font-semibold leading-[1.1] tracking-tight md:text-6xl lg:text-7xl">
             Technology Decisions That Drive{" "}
             <span className="text-white/90">Business Growth</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-white/70 md:text-xl">
-            Helping startups, SMEs and enterprises transform ideas into scalable
-            digital platforms through consulting, architecture, AI and technology
-            strategy.
+            We help startups, SMEs, and enterprises choose the right technology
+            path-and we incubate digital products that can grow into independent
+            companies.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Button
@@ -61,7 +61,7 @@ export function HeroSection() {
               variant="outline"
               className="border-white/20 bg-transparent text-white hover:bg-white/10"
             >
-              <Link href="/services">Explore Our Services</Link>
+              <Link href="/products">Products & Ventures</Link>
             </Button>
           </div>
         </motion.div>

@@ -5,9 +5,9 @@ export const SITE = {
   logoIcon: "/nzo-icon.png",
   logoFull: "/nzo-logo-full.png",
   tagline:
-    "We don't just build software. We design the right solution for your business growth.",
+    "Business outcomes first. Technology in service of strategy-and ventures built to stand on their own.",
   description:
-    "Technology consulting and solution advisory helping startups, SMEs, and enterprises drive digital transformation through strategy, architecture, and AI.",
+    "Technology consulting, solution advisory, and venture building. We help startups, SMEs, and enterprises drive digital transformation through strategy, architecture, and AI-and we incubate digital products that can grow into independent companies.",
   url: "https://nzoinnovations.com",
   email: "hello@nzoinnovations.com",
   phone: "+94 77 363 8063",
@@ -30,7 +30,7 @@ export const NAV_ITEMS = [
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
   { label: "Our Approach", href: "/approach" },
-  { label: "Products", href: "/products" },
+  { label: "Products & Ventures", href: "/products" },
   { label: "Insights", href: "/insights" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
@@ -91,11 +91,76 @@ export const WHY_NZO = [
   { title: "Long-term technology partner", description: "We stay engaged beyond the initial engagement as your trusted advisor." },
 ] as const;
 
+/** Portfolio ventures that began under nZO and operate (or are forming) as dedicated companies. */
+export const VENTURES = [
+  {
+    id: "entertain-passport",
+    name: "Entertain Passport (Pvt) Ltd",
+    industry: "Entertainment",
+    status: "portfolio-company" as const,
+    statusLabel: "Portfolio Company",
+    description:
+      "An entertainment-sector company incubated within nZO Innovations. Originally developed as an nZO product, it now operates as Entertain Passport (Pvt) Ltd-with nZO remaining a strategic technology and growth partner.",
+  },
+] as const;
+
+/** Products currently incubating under nZO before dedicated company formation. */
 export const PRODUCTS = [
-  { name: "nZO Platform Suite", category: "Enterprise Platform", description: "Integrated business platform for operations, analytics, and customer engagement.", status: "coming-soon" as const },
-  { name: "InsightAI", category: "AI Analytics", description: "Executive intelligence layer that transforms business data into strategic decisions.", status: "coming-soon" as const },
-  { name: "ConnectHub", category: "Integration Platform", description: "API-first integration hub for connecting enterprise systems and third-party services.", status: "coming-soon" as const },
-  { name: "SecureVault", category: "Security & Compliance", description: "Compliance and security monitoring platform for regulated industries.", status: "coming-soon" as const },
+  {
+    name: "GardianAir",
+    category: "Travel & Mobility",
+    description:
+      "An upcoming travel mobility product for travellers who need secure airport pick-up and drop-only-reliable transfers focused on safety and punctuality.",
+    status: "upcoming" as const,
+  },
+  {
+    name: "MyDriver",
+    category: "Mobility",
+    description:
+      "An upcoming mobility product designed to connect riders and drivers with reliable, technology-led transport experiences.",
+    status: "upcoming" as const,
+  },
+  {
+    name: "CareHelp",
+    category: "Healthcare",
+    description:
+      "An upcoming care-coordination product helping people access support, services, and health-related assistance more effectively.",
+    status: "upcoming" as const,
+  },
+  {
+    name: "nZO Academy",
+    category: "Education / EdTech",
+    description:
+      "An upcoming learning platform to develop technology, product, and entrepreneurial talent aligned with real venture and industry needs.",
+    status: "upcoming" as const,
+  },
+] as const;
+
+/** How nZO builds products into sustainable companies-carefully worded, no exit promises. */
+export const VENTURE_LIFECYCLE = [
+  { step: "01", title: "Discover", description: "Identify meaningful problems and market opportunities across industries." },
+  { step: "02", title: "Validate", description: "Test demand, feasibility, and commercial potential before heavy build investment." },
+  { step: "03", title: "Incubate", description: "Shape product strategy, architecture, branding, and early operating model under nZO." },
+  { step: "04", title: "Build", description: "Engineer platforms with enterprise-grade architecture, AI where it adds value, and clear ownership." },
+  { step: "05", title: "Launch", description: "Bring products to market with focused teams, governance, and measurable traction goals." },
+  { step: "06", title: "Grow", description: "Scale users, operations, and partnerships while strengthening the product organization." },
+  { step: "07", title: "Spin Out", description: "When ready, form a dedicated company with leadership and structure that can operate independently." },
+  { step: "08", title: "Hold / Partner / Exit Flexibility", description: "nZO may retain ownership, stay as technology partner, welcome investment, or pursue other strategic paths-without building solely to sell." },
+] as const;
+
+export const BRAND_ARCHITECTURE = [
+  {
+    title: "nZO Innovations",
+    description: "Technology strategy, consulting, architecture, product building, and venture incubation.",
+  },
+  {
+    title: "Internal Products",
+    description: "Early-stage products under nZO while teams validate market fit and operating models.",
+  },
+  {
+    title: "Portfolio Companies",
+    description: "Mature ventures that become independent companies-such as Entertain Passport (Pvt) Ltd-with nZO as owner and/or strategic partner.",
+  },
 ] as const;
 
 export const INSIGHTS = [
@@ -113,6 +178,7 @@ export const INSIGHTS = [
   { slug: "api-first-integration-strategy", title: "API-First Integration Strategy for Enterprise Ecosystems", excerpt: "Treat APIs as products-with lifecycle, SLAs, and governance that scale partnerships.", category: "Architecture", date: "2025-12-28", readTime: "6 min read" },
   { slug: "zero-trust-for-growing-enterprises", title: "Zero Trust for Growing Enterprises", excerpt: "Continuous verification and least privilege without paralyzing productivity.", category: "Technology", date: "2025-12-10", readTime: "7 min read" },
   { slug: "data-strategy-before-ai", title: "Data Strategy Before AI: The Prerequisite Leaders Skip", excerpt: "Trustworthy, governed data-not models-is the real AI moat.", category: "AI", date: "2025-11-22", readTime: "8 min read" },
+  { slug: "from-product-to-company-venture-building", title: "From Product to Company: How Technology Ventures Should Mature", excerpt: "Incubation is not a logo exercise-it is the disciplined path from validated product to an organization that can operate independently.", category: "Business Strategy", date: "2026-03-20", readTime: "8 min read" },
 ] as const;
 
 export const STATS = [
@@ -131,4 +197,7 @@ export const SEO_KEYWORDS = [
   "Platform Strategy",
   "Technology Advisory",
   "Business Technology Consultant",
+  "Technology Venture Builder",
+  "Product Incubation Sri Lanka",
+  "Digital Product Development",
 ] as const;
